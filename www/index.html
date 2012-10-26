@@ -2,17 +2,27 @@
         "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
-    <link rel="stylesheet" type="text/css" media="screen" href="css/reset-min.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <!--<link rel="stylesheet" type="text/css" media="screen" href="css/reset-min.css"/>-->
+    <!--<link rel="stylesheet" type="text/css" media="screen" href="css/style.css"/>-->
 </head>
 
 <body>
 
 <div id="header">
-    <div id="login">
-
+    <div id="login-form">
+        <h3>Вход для клиентов</h3>
+        <form action="/" method="post">
+            <dl>
+                <dt>Логин:</dt>
+                <dd><input name="name" id="name" value="" type="text"/></dd>
+                <dt>Пароль:</dt>
+                <dd><input name="password" id="password" value="" type="password"/></dd>
+                <dt></dt>
+                <dd><input name="submitsignup" id="submitsignup" value="Войти" type="submit"></dd>
+            </dl>
+        </form>
     </div>
     <div class="telephone">
         <ul>
@@ -22,7 +32,8 @@
         </ul>
     </div>
     <div class="rss"><a href="#"></a></div>
-    <div class="carousel-menu">
+    <div id="carousel-menu">
+        <div class="btnPrev" title="Назад"></div>
         <ul>
             <li><a href="#">Немецкий</a></li>
             <li><a href="#">Испанский</a></li>
@@ -31,43 +42,101 @@
             <li><a href="#">Французский</a></li>
             <li><a href="#">Голландский</a></li>
         </ul>
-
+        <div class="btnNext" title="Вперед"></div>
     </div>
     <div class="icons">
         <ul>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-        </ul>
-    </div>
-    <div class="main-menu">
-        <ul>
-            <li><a href="#">Обучение</a></li>
-            <li><a href="#">Цены</a></li>
-            <li><a href="#">Заявка</a></li>
-            <li><a href="#">О нас</a></li>
-            <li><a href="#">Анонс событий</a></li>
-            <li><a href="#">От 5 до 16 лет</a></li>
-            <li><a href="#">В компаниях</a></li>
-            <li><a href="#">За рубежом</a></li>
-            <li><a href="#">Форум</a></li>
-            <li><a href="#">Тест</a></li>
-            <li><a href="#">On-line</a></li>
+            <li><a class="home-icon" href="#" title="ЛЕГАПОЛИС курсы иностранных языков">ЛЕГАПОЛИС курсы иностранных языков</a></li>
+            <li><a class="mail-icon" href="#" title="написать письмо">написать письмо</a></li>
+            <li><a class="sitemap-icon" href="#" title="карта сайта">карта сайта</a></li>
         </ul>
     </div>
 </div>
 
+<div id="main-menu">
+    <ul>
+        <li><a href="#">Обучение</a></li>
+        <li><a href="#">Цены</a></li>
+        <li><a href="#">Заявка</a></li>
+        <li><a href="#">О нас</a></li>
+        <li><a href="#">Анонс событий</a></li>
+        <li><a href="#">От 5 до 16 лет</a></li>
+        <li><a href="#">В компаниях</a></li>
+        <li><a href="#">За рубежом</a></li>
+        <li><a href="#">Форум</a></li>
+        <li><a href="#">Тест</a></li>
+        <li><a href="#">On-line</a></li>
+    </ul>
+</div>
 
 <div id="content">
     <div class="stripe"></div>
     <div class="main">
+        <div class="preview-article">
+            <img src="images/main_img_01.png" alt="" />
 
+            <h2><a href="#">Проекты</a></h2>
+
+            <p>2009.07.16</p>
+
+            <p>В нашем образовательном центре формирование новых групп по изучению различньк языков идет в течение всего
+                года. На данной странице Вы найдете те учебные проекты, которые мы запланировали на ближайшее
+                время...</p>
+        </div>
+        <div class="preview-article">
+            <img src="images/main_img_02.png" alt="" />
+
+            <h2><a href="#">Свободные места в группах</a></h2>
+
+            <p>2009.07.13</p>
+
+            <p>Спешите! Мы приглашаем Вас присоединиться к группам, где появились свободные места. Первое занятие для
+                Вас пробное. Приходите к нам - мы Вас ждем и поможем подобрать Вам программу и группу в соответствии с
+                Вашим уровнем и пожеланиями...</p>
+        </div>
+        <div class="preview-article">
+            <img src="images/main_img_03.png" alt="" />
+
+            <h2><a href="#">Специальное предложение корпоративным клиентам!</a></h2>
+
+            <p>2009.07.13</p>
+
+            <p>Летнее предложение для Вас! Учебное пособие в подарок для каждого слушателя компании заключившей договор
+                на обучение с нашим образовательным центром с 1 июня по 31 августа 2009 года...</p>
+        </div>
+        <div class="preview-article">
+            <img src="images/main_img_04.png" alt="" />
+
+            <h2><a href="#">Проект "СОВА"</a></h2>
+
+            <p>2009.07.13</p>
+
+            <p>Теперь мы работаем с 8.00 утра до 02.00 ночи!!! В этом году у нас появилась возможность предоставить Вам
+                уроки в позднее вечернее и НОЧНОЕ время. Мы предлагаем занятия для тех, кто может заниматься только
+                после 22...</p>
+        </div>
+        <div class="preview-article">
+            <img src="images/main_img_05.png" alt="" />
+
+            <h2><a href="#">День открытых дверей</a></h2>
+
+            <p>2009.07.13</p>
+
+            <p>04 октября наши двери вновь открыты для Вас. С 12.00 до 16.00 наш образовательный центр проводит "День
+                открытых дверей"! Вас ждет: информация о наших курсах; знакомство с проектами на будущий учебньй год;
+                розыгрыш лотереи; возможность получить скидку на обучение...</p>
+        </div>
     </div>
     <div class="menu-bar">
-
+        <ul>
+            <li><a href="#">Подпункты основного меню</a></li>
+            <li><a href="#">Второй</a></li>
+            <li><a href="#">Третий и так далее</a></li>
+            <li><a href="#">И последний</a></li>
+        </ul>
     </div>
     <div class="side-bar">
-
+        <img src="images/side_img.png" alt=""/>
     </div>
     <div class="stripe"></div>
 </div>
