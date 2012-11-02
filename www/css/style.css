@@ -14,14 +14,16 @@ html {
 }
 
 body {
-    background: url(../images/bg_header.png) #fff left top no-repeat;
+
     font: 11px Tahoma, Helvetica, sans-serif;
     color: #6699cc;
-    margin: 0px auto;
-    min-height: 100%;
-    overflow: auto;
-    position: relative;
-    width: 900px;
+    /*margin: 0px auto;*/
+
+    height: 100%;
+
+    /*overflow: auto;*/
+    /*position: relative;*/
+    width: 100%;
 }
 
 span {
@@ -34,21 +36,8 @@ a {
 }
 
 a:hover {
-    /*color: #fa823a;*/
     text-decoration: underline;
 }
-
-/*.clear {*/
-/*clear: both;*/
-/*}*/
-
-/*.helper {*/
-/*background: url(../images/bg_field.png) left top repeat-x;*/
-/*width: 100%;*/
-/*height: 0px;*/
-/*margin-top: 8px;*/
-/*visibility: hidden;*/
-/*}*/
 
 .top,
 .footer {
@@ -63,8 +52,18 @@ a:hover {
 
 .footer {
     /*background: #ddd333;*/
-    position: absolute;
-    bottom: 0px;
+    position: relative;
+    margin: -28px auto 0px;
+    width: 900px;
+}
+
+#wrapper {
+    background: url(../images/bg_header.png) #fff left top no-repeat;
+    width: 900px;
+    margin: 0 auto;
+    min-height: 100%;
+    /*height: auto !important;*/
+    /*height: 100%;*/
 }
 
 /* 2. header ---------------------------*/
@@ -283,17 +282,19 @@ a:hover {
 }
 
 #main-menu ul {
-    font-size: 60%;
-    /*line-height: 0px;*/
+    /*font-size: 0.6em;*/
+    line-height: 0px;
     text-align: justify;
-    /*margin: 1px;*/
+    margin-bottom: 4px;
+    /*padding-bottom: 1px;*/
     /*background-color: #ccc333;*/
 }
 
 #main-menu ul:after {
     content: '';
     display: inline-block;
-    height: 0;
+    /*font-size: 0.2em;*/
+    height: 0px;
     overflow: hidden;
     visibility: hidden;
     width: 100%;
@@ -301,8 +302,8 @@ a:hover {
 
 #main-menu ul li {
     display: inline-block;
-    font-size: 1.6em;
-    /*line-height: normal;*/
+    /*font-size: 1.6em;*/
+    line-height: normal;
     text-align: left;
     /*background-color: #00beff;*/
 }
