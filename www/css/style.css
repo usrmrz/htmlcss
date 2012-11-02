@@ -8,39 +8,97 @@
 */
 
 /* 1. base style ---------------------------*/
-
-body {
-    width: 900px;
-    /*margin: 0px auto;*/
-    font: 11px Tahoma, Helvetica, sans-serif;
+html {
+    height: 100%;
+    /*background-color: #555;*/
 }
 
-/*a {*/
-/*color: #0e69c5;*/
+body {
+    background: url(../images/bg_header.png) #fff left top no-repeat;
+    font: 11px Tahoma, Helvetica, sans-serif;
+    color: #6699cc;
+    margin: 0px auto;
+    min-height: 100%;
+    overflow: auto;
+    position: relative;
+    width: 900px;
+}
+
+span {
+    display: none;
+}
+
+a {
+    color: #6699cc;
+    text-decoration: none;
+}
+
+a:hover {
+    /*color: #fa823a;*/
+    text-decoration: underline;
+}
+
+/*.clear {*/
+/*clear: both;*/
 /*}*/
 
-/*a:hover {*/
-/*color: #fa823a;*/
-/*text-decoration: none;*/
+/*.helper {*/
+/*background: url(../images/bg_field.png) left top repeat-x;*/
+/*width: 100%;*/
+/*height: 0px;*/
+/*margin-top: 8px;*/
+/*visibility: hidden;*/
 /*}*/
 
-.clear {
-    clear: both;
+.top,
+.footer {
+    background: #fff url(../images/bg_field.png) left top repeat-x;
+    width: 100%;
+    height: 28px;
+}
+
+.top {
+    margin-bottom: -3px;
+}
+
+.footer {
+    /*background: #ddd333;*/
+    position: absolute;
+    bottom: 0px;
 }
 
 /* 2. header ---------------------------*/
 
 #header {
-    background: url(../images/bg_header.png) left top no-repeat;
+    /*background-color: #eee888;*/
     position: relative;
-    height: 240px;
+    height: 190px;
+    padding-top: 28px;
 }
 
 #header h1 {
-    display: none;
+    /*display: none;*/
+    float: left;
+    margin-left: 360px;
 }
 
+#header h1 a {
+    display: block;
+    /*float: left;*/
+    /*padding-left: 360px;*/
+    height: 35px;
+    width: 180px;
+    /*text-indent: -9999px;*/
+
+}
+
+/*#header h1 a span {*/
+/*display: none;*/
+/*}*/
+
 #header address {
+    /*float: right;*/
+    border: 0px;
     font-size: 90%;
     text-align: right;
 }
@@ -48,36 +106,95 @@ body {
 #header .rss {
     background: url(../images/rss.png) no-repeat;
     float: left;
+    margin: 111px 130px 0px 0px;
 }
 
 #header .rss a {
     display: block;
     height: 13px;
     width: 13px;
-    text-indent: -9999px;
+    /*text-indent: -9999px;*/
 }
 
 #header #carousel-menu {
+
+    /*background-color: #fffaaa;*/
+    /*position: relative;*/
     float: left;
-    height: 50px;
-    width: 611px;
+    margin-top: 71px;
+    /*height: 55px;*/
+    width: 613px;
 }
 
 #header #carousel-menu ul {
-
+    /*background-color: #666666;*/
+    margin: 0px auto;
+    position: relative;
+    width: 562px;
 }
 
 #header #carousel-menu li {
+    background: url(../images/flags.png) no-repeat;
     float: left;
+    font-size: 90%;
+    height: 43px;
+    width: 85px;
+
+}
+
+.bottom {
+    margin-top: 10px;
+    margin-left: 6px;
+}
+
+.middle {
+    margin-top: 4px;
+    margin-left: 6px;
+}
+
+#header #carousel-menu li.bottom {
+    background-position: 0px 0px;
+}
+
+#header #carousel-menu li.bottom+li.middle {
+    background-position: 0px -43px;
+    margin-left: 5px;
+}
+
+#header #carousel-menu li.middle+li {
+    background-position: 0px -86px;
+    margin-left: 5px;
+}
+
+#header #carousel-menu li+li {
+    background-position: 0px -129px;
+    margin-left: 15px;
+}
+
+#header #carousel-menu li+li.middle {
+    background-position: 0px -172px;
+    margin-left: 8px;
+}
+
+#header #carousel-menu li.middle+li.bottom {
+    background-position: 0px -215px;
+    margin-left: 5px;
 }
 
 #header #carousel-menu li a {
     display: block;
+    margin: 24px auto 0px;
+    padding-left: 3px;
+    text-align: center;
+    width: 70px;
 }
 
-#header #carousel-menu .btnPrev,
-#header #carousel-menu .btnNext {
+#header #carousel-menu .btnPrev {
     float: left;
+}
+
+#header #carousel-menu .btnNext {
+    float: right;
 }
 
 #header #carousel-menu .btnPrev a,
@@ -85,8 +202,10 @@ body {
     background: url(../images/arrows.png);
     display: block;
     height: 15px;
+    margin-top: 38px;
     width: 16px;
-    text-indent: -9999px;
+
+    /*text-indent: -9999px;*/
 }
 
 #header #carousel-menu .btnPrev a {
@@ -106,11 +225,14 @@ body {
 }
 
 #header .icons {
-    float: left;
+    float: right;
+    margin-top: 111px;
+    /*margin-left: 800px;*/
 }
 
 #header .icons ul {
-
+    /*padding-right: 1px;*/
+    border: 0px;
 }
 
 #header .icons ul li {
@@ -121,8 +243,10 @@ body {
     background: url(../images/icons.png);
     display: block;
     height: 13px;
+    margin-left: 7px;
     width: 14px;
-    text-indent: -9999px;
+
+    /*text-indent: -9999px;*/
 }
 
 #header .icons ul li.home-icon a {
@@ -143,25 +267,139 @@ body {
 
 #header .icons ul li.sitemap-icon a {
     background-position: 14px 0px;
+    margin-left: 6px;
+
 }
 
 #header .icons ul li.sitemap-icon a:hover {
     background-position: 14px 13px;
+    margin-left: 6px;
+}
+
+#main-menu {
+    /*font-size: 11px;*/
+    /*background-color: #eee;*/
+    /*margin-bottom: -1px;*/
+}
+
+#main-menu ul {
+    font-size: 60%;
+    /*line-height: 0px;*/
+    text-align: justify;
+    /*margin: 1px;*/
+    /*background-color: #ccc333;*/
+}
+
+#main-menu ul:after {
+    content: '';
+    display: inline-block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    width: 100%;
+}
+
+#main-menu ul li {
+    display: inline-block;
+    font-size: 1.6em;
+    /*line-height: normal;*/
+    text-align: left;
+    /*background-color: #00beff;*/
+}
+
+#main-menu ul li a {
+    display: inline;
+    text-align: left;
 }
 
 /* 3. content style ---------------------------*/
 
-/* 4. form style ------------------------------*/
-#login-form {
-    float: left;
-    font-size: 90%;
+#content {
+    overflow: hidden;
+    padding-bottom: 28px;
 }
 
-#login-form h3 {
+#content .main {
+    /*background-color: #ff0000;*/
+    float: left;
+    width: 552px;
+    /*padding: 0px 5px;*/
+    margin-left: 174px;
+    /*margin-top: -1px;*/
+}
 
+#content .main h2 {
+    /*background-color: #00beff;*/
+    font-size: 1.3em;
+    /*letter-spacing: 1px;*/
+    margin: -1px 5px -1px 81px;
+    /*padding: 0px;*/
+
+}
+
+#content .main h2+p {
+    font-size: 0.8em;
+    /*margin: 1px 0px;*/
+}
+
+#content .main p+p {
+    /*font-size: 100%;*/
+    margin: 0px 5px 16px 81px;
+    /*padding-right: 10px;*/
+}
+
+#content .main img {
+    float: left;
+    height: 61px;
+    width: 61px;
+    margin: 2px 10px;
+    /*margin-left: 4px;*/
+    /*overflow: hidden;*/
+}
+
+#content .menu-bar {
+    /*background: #aaaeee;*/
+    float: left;
+    width: 174px;
+    margin-left: -726px;
+}
+
+#content .menu-bar ul {
+    margin-left: 10px;
+}
+
+#content .menu-bar ul li {
+    margin-bottom: 7px;
+}
+
+#content .side-bar {
+    /*background: #111fff;*/
+    float: right;
+    padding-top: 3px;
+    width: 174px;
+}
+
+/* 4. form style ------------------------------*/
+#login {
+    color: #6699cc;
+    font-size: 90%;
+    position: absolute;
+    /*top: 28px;*/
+    /*left: -1px;*/
+    width: 93px;
+    /*margin-left: -540px;*/
+    /*float: left;*/
+
+    /*margin-right: 250px;*/
 }
 
 #login-form dl {
+    margin: 2px 0px 3px;
+}
+
+#login-form dt,
+#login-form dd {
+    margin-top: -1px;
 
 }
 
@@ -170,6 +408,44 @@ body {
 }
 
 #login-form dd {
-    font-size: 80%;
     margin-left: 40px;
+}
+
+#login-form input {
+    /*border: 0px;*/
+    /*background: #fff;*/
+}
+
+#login-form input[type='submit']::-moz-focus-inner {
+    padding: 0;
+    border: 0
+}
+
+#login-form input[type="submit"] {
+    background: #fff;
+    border: 1px;
+    color: #0099cc;
+    cursor: pointer;
+    font-size: 1.1em;
+    /*text-decoration: underline;*/
+    /*text-align: left;*/
+    /*display: none;*/
+    width: 40px;
+    text-align: left;
+    margin-left: 1px;
+    /*display: inline;*/
+
+}
+
+#login-form input[type="submit"]:hover {
+    text-decoration: underline;
+}
+
+#login-form input[type="text"],
+#login-form input[type="password"] {
+    background: #fff url(../images/form_input.png) no-repeat;
+    border: 0px;
+    height: 11px;
+    width: 53px;
+    cursor: text;
 }
