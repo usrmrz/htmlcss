@@ -2,35 +2,35 @@
         "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>Легаполис - курсы иностранных языков</title>
+    <meta http-equiv="Content-Type" content="text/xml; charset=utf-8"/>
+    <title>Мегаполис - курсы иностранных языков</title>
     <link rel="stylesheet" type="text/css" media="screen" href="css/reset-min.css"/>
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css"/>
-    <!--[if IE]>
-    <link rel="stylesheet" type="text/css" media="screen" href="css/style-ie.css"/>
-    <![endif]-->
 
 </head>
 
 <body>
 <div id="wrapper">
     <div id="header">
-        <h1><a href="/"><span>Легаполис - курсы иностранных языков</span></a></h1>
-
-        <div id="login">
-            <h2>Вход для клиентов</h2>
-
-            <form id="login-form" action="/" method="post">
-                <dl>
-                    <dt>Логин:</dt>
-                    <dd><input name="name" id="name" value="" type="text"/></dd>
-                    <dt>Пароль:</dt>
-                    <dd><input name="password" id="password" value="" type="password"/></dd>
-                    <dt><input name="submit" id="submit" value="Войти" type="submit" /></dt>
-                    <dd><span>.</span></dd>
-                </dl>
+        <h1><a href="/"><span>Мегаполис - курсы иностранных языков</span></a></h1>
+            <form action="/" method="post" id="loginform">
+                <h2>Вход для клиентов</h2>
+                <div>
+                    <label for="login">Логин:</label>
+                    <input id="login" name="login" type="text" class="required" />
+                </div>
+                <div>
+                    <label for="password">Пароль:</label>
+                    <input id="password" name="password" type="password" class="required" />
+                </div>
+                <div>
+                    <input type="submit" value="Войти" />
+                </div>
             </form>
-        </div>
+
+
+
+        <!--</div>-->
         <address>
             +7(495) 959-09-79<br/>
             959-06-56<br/>
@@ -63,7 +63,7 @@
         <ul>
             <li><a href="#">Обучение</a></li>
             <li><a href="#">Цены</a></li>
-            <li><a href="#">Заявка</a></li>
+            <!--<li><a href="#">Заявка</a></li>-->
             <li><a href="#">О нас</a></li>
             <li><a href="#">Анонс событий</a></li>
             <li><a href="#">От 5 до 16 лет</a></li>

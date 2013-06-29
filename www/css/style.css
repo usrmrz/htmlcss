@@ -321,57 +321,115 @@ a {
 
 /* 4. form style ------------------------------*/
 
-#login {
-    color: #a9bdd4;
-    font-size: 90%;
+#loginform {
+    font-size: 0.9em;
+    width: 100px;
+    height: 53px;
+    overflow: hidden;
+    /*padding: 2px;*/
     position: absolute;
-    width: 95px;
     left: 0px;
 }
 
-#login h2 {
-    /*margin-left: 3px;*/
+#loginform h2 {
+    margin: 0px 0px 2px 0px;
 }
 
-#login-form dl {
-    margin: 2px 0px 3px 0px;
-}
-
-#login-form dt,
-#login-form dd {
-    margin-top: -1px;
-}
-
-#login-form dt {
+#loginform > div {
     float: left;
-}
-
-#login-form dd {
-    margin-left: 40px;
-}
-
-#login-form input[type='submit']::-moz-focus-inner {
-    border: 0;
-    padding: 0;
-}
-
-#login-form input[type="submit"] {
-    background: #fff;
-    border: 0px;
-    color: #0094d9;
-    cursor: pointer;
-    font-size: 1.1em;
-    margin: 3px 5px 0px 1px;
-    text-align: left;
-    text-decoration: underline;
-    width: 35px;
-}
-
-#login-form input[type="text"],
-#login-form input[type="password"] {
-    background: #fff url(../images/form_input.png) no-repeat;
-    border: 0px;
-    cursor: text;
+    width: 100%;
     height: 11px;
-    width: 53px;
+    /*margin-bottom: 5px;*/
 }
+
+#loginform label {
+    float: left;
+    width: 40px;
+    position: relative;
+    top: -1px;
+    /*margin-left: 2px;*/
+    /*height: 11px;*/
+}
+
+#loginform input[type=text], #loginform input[type=password] {
+    background: #fff url(../images/form_input.png) no-repeat;
+    width: 53px;
+    border: 0px;
+    /*height: 11px;*/
+}
+
+#loginform > div input[type=submit] {
+    background: #fff;
+    font-size: 1.1em;
+    text-decoration: underline;
+    color: #0094d9;
+    width: 3em;
+    border: 0px;
+    cursor: pointer;
+    height: 1.4em;
+}
+
+/*#login {*/
+    /*color: #a9bdd4;*/
+    /*font-size: 90%;*/
+    /*position: absolute;*/
+    /*width: 95px;*/
+    /*left: 0px;*/
+/*}*/
+
+/*#login h2 {*/
+    /*margin-left: 3px;*/
+/*}*/
+
+/*#login form {*/
+    /*margin: 2px 0px 3px 0px;*/
+/*}*/
+
+/*#login-form label,*/
+/*#login-form input {*/
+    /*margin-top: -1px;*/
+    /*margin: 2px -1px 3px 0px;*/
+/*}*/
+
+/*#login-form label {*/
+    /*float: left;*/
+/*}*/
+
+/*#login-form input {*/
+    /*margin-left: 50px;*/
+/*}*/
+
+/*div.row {margin:0 0 5px 0;float:left;width:100%;padding:6px 0;}*/
+/*div.row label {float:left;display:block;width:15em;font-weight:bold;padding:0 6px;}*/
+/*div.row label:hover {background:#FFFF66;cursor:pointer;}*/
+/*div.row fieldset {border:1px solid gray;margin:0 6px;}*/
+/*div.row fieldset span {float:left;display:block;}*/
+/*div.row fieldset span label {float:none;display:inline;}*/
+/*div.row fieldset legend {font-weight:bold;}*/
+/*div.requiredRow {border:2px solid #049;}*/
+
+/*#login-form input[type='submit']::-moz-focus-inner {*/
+    /*border: 0;*/
+    /*padding: 0;*/
+/*}*/
+
+/*#login-form input[type="submit"] {*/
+    /*background: #fff;*/
+    /*border: 0px;*/
+    /*color: #0094d9;*/
+    /*cursor: pointer;*/
+    /*font-size: 1.1em;*/
+    /*margin: 3px 5px 0px 1px;*/
+    /*text-align: left;*/
+    /*text-decoration: underline;*/
+    /*width: 35px;*/
+/*}*/
+
+/*#login-form input[type="text"],*/
+/*#login-form input[type="password"] {*/
+    /*background: #fff url(../images/form_input.png) no-repeat;*/
+    /*border: 0px;*/
+    /*cursor: text;*/
+    /*height: 11px;*/
+    /*width: 53px;*/
+/*}*/
